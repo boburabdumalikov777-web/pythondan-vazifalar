@@ -1,0 +1,23 @@
+"""Write a function that moves all elements of one type to the end of the list.
+
+Examples
+move_to_end([1, 3, 2, 4, 4, 1], 1) ➞ [3, 2, 4, 4, 1, 1]
+# Move all the 1s to the end of the array.
+
+move_to_end([7, 8, 9, 1, 2, 3, 4], 9) ➞ [7, 8, 1, 2, 3, 4, 9]
+
+move_to_end(["a", "a", "a", "b"], "a") ➞ ["b", "a", "a", "a"]
+Notes"""
+def move_to_end(lst, el):
+    a=[]
+    b=[]
+    c=[]
+    for x in lst:
+        if x !=el:
+            a.append(x)
+    for x in lst:
+        if x==el:
+            b.append(x)
+    c=a+b
+    return c
+print(move_to_end([5,4,8,9,3,3,4,7],9))
