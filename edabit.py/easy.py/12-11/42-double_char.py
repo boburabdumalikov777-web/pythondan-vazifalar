@@ -7,11 +7,21 @@ double_char("Hello World!") ➞ "HHeelllloo  WWoorrlldd!!"
 
 double_char("1234!_ ") ➞ "11223344!!__  "
 Notes
-All test cases contain valid strings. Don't worry about spaces, special characters or numbers. They're all considered valid characters."""
+All test cases contain valid strings. Don't worry about spaces, special characters or numbers. They're all considered valid characters.
+"""
+
+
 def double_char(txt):
-    a=""
+    a = ""
     for x in txt:
-        a+=x+x
-    return  a
+        a += x + x
+    return a
+
+
 print(double_char("Hello World!"))
 print(double_char("String"))
+
+print(double_char("Hello World!"))
+
+
+print(double_char("Hello World!"))
